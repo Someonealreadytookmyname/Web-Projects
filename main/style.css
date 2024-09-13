@@ -132,13 +132,6 @@ aside #social-links img:hover
     font-size: x-large;
     margin: 5%;
 }
-
-
-
-
-
-
-
 .card
 {
     width: 20vw;
@@ -150,6 +143,14 @@ aside #social-links img:hover
     box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.1);
     border: 3px solid rgba(255, 255, 255, .1);
     margin: 1%;
+
+    transition: .3s;
+}
+.card:hover
+{
+    scale: 0.95;
+    /* transform: scale(-1.05); */
+    transition: .3s;
 }
 .card .image > img
 {
@@ -183,10 +184,34 @@ aside #social-links img:hover
     height: auto; /* 80vh */
     margin-left: 10vw;
     padding: 1%;
-    display: flex;
+    /* display: flex; */
     margin-top: 20%;
 }
 .card-section .card .image #fries-image
 {
     width: 30%
+}
+.card-section .card .image #sandwich-image
+{
+    width: 50%
+}
+#card-section #card-part
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+#card-section #card-part2
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#text1{
+    opacity: 0;
+    transition:opacity 1.5s ease-in;
+}
+#text1.show{
+    opacity: 1;
 }
