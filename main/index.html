@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="2.css">
 </head>
 <body>
-    <header>
+    <div id="cursor"></div>
+    <header id="header">
         <img src="Screenshot_2024-09-07_205923-removebg-preview.png" alt=""> <h1> Vaibhav Chai Vala </h1>
         <nav>
             <a href="">Home</a>
@@ -16,7 +17,15 @@
             <a href="">About</a>
         </nav>
     </header>
-    <aside>
+    <aside id="aside">
+        <div id="navigation">
+            <img src="home.png" alt="">
+                <img src="nodes.png" alt="" class="nodes">
+            <img src="menu.png" alt="">
+                <img src="nodes.png" alt="" class="nodes">
+            <img src="information-button.png" alt="">
+        </div>
+        
         <div id="social-links">
             <img src="social.png" alt="">
             <img src="facebook.png" alt="">
@@ -27,13 +36,13 @@
     <div id="hero">
         <div id="text">
             <h4 id="text1">Delicious, Fresh, and 100% Vegetarian Delights!"</h4>
-            <p>Your go-to spot for the healthiest, tastiest meals in town.</p>
+            <p id="text2">Your go-to spot for the healthiest, tastiest meals in town.</p>
         </div>
     </div>
 
-    <div id="card-section" class="card-section">
+    <div id="card-section" class="card-section" data-tilt data-tilt-glare>
         <div id="card-part">
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com (3).png" alt="" id="fries-image">
                     <h3>French Fries</h3>
@@ -42,7 +51,7 @@
                     <p>Crispy and golden, made from fresh potatoes, and 100% vegetarian.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com.png" alt="" id="sandwich-image">
                     <h3>Sandwich</h3>
@@ -51,7 +60,7 @@
                     <p>Fresh, flavorful, and 100% vegetarian, perfect for a healthy bite.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com (1).png" alt="">
                     <h3>Burger</h3>
@@ -60,7 +69,7 @@
                     <p>Juicy and plant-based, our burger is a tasty vegetarian treat.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com (2).png" alt="">
                     <h3>Pizza</h3>
@@ -71,7 +80,7 @@
             </div>
         </div>
         <div id="card-part2">
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com (3).png" alt="" id="fries-image">
                     <h3>French Fries</h3>
@@ -80,7 +89,7 @@
                     <p>Crispy and golden, made from fresh potatoes, and 100% vegetarian.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com.png" alt="" id="sandwich-image">
                     <h3>Sandwich</h3>
@@ -89,7 +98,7 @@
                     <p>Fresh, flavorful, and 100% vegetarian, perfect for a healthy bite.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com (1).png" alt="">
                     <h3>Burger</h3>
@@ -98,7 +107,7 @@
                     <p>Juicy and plant-based, our burger is a tasty vegetarian treat.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-tilt data-tilt-glare>
                 <div class="image">
                     <img src="pngwing.com (2).png" alt="">
                     <h3>Pizza</h3>
@@ -133,6 +142,10 @@
     </div>
     <div class="temporary-div">
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="tiltAnimation.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

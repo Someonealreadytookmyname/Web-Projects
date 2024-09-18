@@ -4,7 +4,7 @@
     background-color: greenyellow;
     width: 80%;
     height: 30%;
-    margin-left: 10%; margin-top: 30%;
+    margin-left: 10%; margin-top: 30%; margin-bottom: 30%;
 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -39,5 +39,65 @@
 }
 .temporary-div
 {
-    height: 30%;
+    height: 1px;
+}
+
+aside
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#navigation
+{
+    width: 60%;
+    height: auto;
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 200%;
+}
+#navigation img
+{
+    width: 30%;
+    
+    margin: 15%;
+}
+.nodes
+{
+    rotate: -45deg;
+}
+
+/* Animations */
+
+#header
+{
+    opacity: 0;
+}
+
+#headerShow
+{
+    opacity: 1;
+    transition:opacity 1.5s ease-in;
+}
+
+#aside
+{
+    opacity: 0;
+}
+/* #asideAnimation
+{
+    /* opacity: 1; 
+    visibility: visible;
+    transition: 0.5s;
+} */
+
+#aside:hover
+{
+    background-color: rgba(188, 25, 25, 0.608);
 }

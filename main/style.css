@@ -16,6 +16,24 @@ body
     background-size: cover;
     height: 200vh;
 }
+
+#cursor
+{
+    width: 2vh;
+    height: 2vh;
+    background-color: rgb(255, 255, 255);
+
+    position: fixed;
+    z-index: 2;
+    scale: 0;
+
+    background-color: #9cf794d8;
+    border-radius: 100%;
+    backdrop-filter: blur(1.5px);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(255, 255, 255, .1);
+}
+
 header
 {
     display: flex;
@@ -75,8 +93,6 @@ aside
     width: 5vw;
     height: 83vh;
     /* background-color: red; */
-    margin-left: 1%;
-    border-radius: 10px;
 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -86,7 +102,7 @@ aside
 
     position: fixed;
     z-index: 1;
-    margin-top: 7%;
+    margin-left: 1%; margin-top: 7%;
 }
 aside #social-links
 {
@@ -94,9 +110,6 @@ aside #social-links
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    position: relative;
-    top: 80%;
 }
 aside #social-links img
 {
@@ -132,6 +145,25 @@ aside #social-links img:hover
     font-size: x-large;
     margin: 5%;
 }
+
+#text1{
+    opacity: 0;
+    transition:opacity 1.5s ease-in;
+}
+#text1.show{
+    opacity: 1;
+}
+#text2
+{
+    opacity: 0;
+}
+/* #text2Animation
+{
+    opacity: 1;
+    transition: 1.5s ease-in;
+} */
+
+
 .card
 {
     width: 20vw;
@@ -206,12 +238,4 @@ aside #social-links img:hover
     display: flex;
     width: 100%;
     height: auto;
-}
-
-#text1{
-    opacity: 0;
-    transition:opacity 1.5s ease-in;
-}
-#text1.show{
-    opacity: 1;
 }
